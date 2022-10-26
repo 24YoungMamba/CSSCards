@@ -1,0 +1,33 @@
+#two {
+  color: #000000;
+  background-color: #256d85;
+}
+
+#two > .card {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 480px;
+  height: 240px;
+
+  /* margin-top: 10vh; until before adding .cards */
+  margin: 10vh;
+
+  /* border: 2px solid black; */
+  background-color: #ffffff; /* if text color is white( 1c5f8a) */
+  border-radius: 10px; /* or 20px */
+}
+
+#two > .card > .card-img {
+  max-height: 160px;
+  /* width: 480px; */
+  height: auto;
+}
+
+#two > .card > .card-text {
+  height: 240px;
+  width: auto;
+}

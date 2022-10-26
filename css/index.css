@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  width: 100vw;
+  height: 50vh;
+}
+
+h1 {
+  font-size: 2.4em;
+  line-height: 2em;
+}
+
+p {
+  font-size: 1.4em;
+  line-height: 1.2em;
+}
+
+#three {
+  color: #ffffff;
+  background-color: #47b5ff;
+}
+
+#four {
+  color: #000000;
+  background-color: #dff6ff;
+}
+
+#five {
+  color: #000000;
+  background-color: #ffffff;
+}
