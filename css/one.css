@@ -1,55 +1,66 @@
-#one {
-  color: #000000;
-  background: #06283d;
+#one h1 {
+  font-size: calc(2em + 1vw);
 }
 
-#one > .cards {
+#one .card-container {
+  width: 100%;
+  height: 40vh;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: var(--container-flex-direction);
+  justify-content: var(--container-justify-content);
+  align-items: var(--container-align-items);
+  align-content: var(--container-align-content);
 }
 
-#one > .cards > .card {
-  display: flex;
-  flex-direction: column;
+#one .card-container .card {
+  display: block;
 
-  justify-content: center;
-  /* align-items: center; */
+  width: 15vw;
+  height: 30vh;
 
-  /* margin-top: 10vh; until before adding .cards */
-  margin: 10vh 5vw;
+  color: black;
+  background-color: white;
 
-  /* border: 2px solid black; */
-  background-color: #ffffff; /* if text color is white( 1c5f8a) */
-  border-radius: 10px; /* or 20px */
+  border: 2px solid white; /* Optional */
+  border-radius: 15px;
 
-  transition: all 0.4s ease-in; /* Simple animation */
+  transition: all 0.3s ease-in;
+  overflow: hidden;
 }
 
-#one > .cards > .card:hover {
-  transform: translateY(-20px);
-
-  box-shadow: 0px 20px 6px -2px rgba(0, 0, 0, 0.75); /* 0 horizontal length, because we're moving in the Y direction. 20px vertical since that's what we're moving */
+#one .card-container .card:hover {
+  transform: translateY(-1.2em);
+  box-shadow: 0px 1.2em 1em 0px #777777;
 }
 
-#one > .cards > .card > .card-img {
-  width: 300px;
-  height: 180px;
+#one .card-container .card .card-image {
+  width: 100%;
+  height: 70%;
 
-  -webkit-mask-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(0, 0, 0, 1)),
-    to(rgba(0, 0, 0, 0.2))
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.2)
-  ); /* Idea from https://freefrontend.com/css-cards/ */
+  overflow: hidden;
 }
 
-#one > .cards > .card > .card-text {
-  width: 280px; /* 280, because width of card( check .card-img) is 300px, and we have an em( for left and right) of 1, which is 10px, and for both sides that would be 20px */
-  margin: 0.5em 1em;
+#one .card-container .card .card-image img {
+  width: 100%;
+  height: 100%;
+}
+
+#one .card-container .card .card-body {
+  width: 100%;
+  height: 100%;
+
+  margin: 1em 0.8em;
+
+  overflow-y: hidden;
+}
+
+#one .card-container .card .card-body h4 {
+  font-size: calc(1.8em + 0.1vw);
+  font-weight: 800;
+}
+
+#one .card-container .card .card-body p {
+  font-size: calc(1em + 0.1vw);
+  font-weight: 100;
 }

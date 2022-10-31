@@ -1,33 +1,60 @@
-#two {
-  color: #000000;
-  background-color: #256d85;
+#two h1 {
+  font-size: calc(2em + 1vw);
 }
 
-#two > .card {
+#two .card-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: var(--container-flex-direction);
+  justify-content: var(--container-justify-content);
+  align-items: var(--container-align-items);
+  align-content: var(--container-align-content);
 
-  justify-content: center;
-  align-items: center;
-
-  width: 480px;
-  height: 240px;
-
-  /* margin-top: 10vh; until before adding .cards */
-  margin: 10vh;
-
-  /* border: 2px solid black; */
-  background-color: #ffffff; /* if text color is white( 1c5f8a) */
-  border-radius: 10px; /* or 20px */
+  width: 80%;
+  height: 40vh;
 }
 
-#two > .card > .card-img {
-  max-height: 160px;
-  /* width: 480px; */
-  height: auto;
+#two .card-container .card {
+  width: 25vw;
+  height: 30vh;
+
+  color: black;
+  background-color: white;
+
+  box-shadow: 0em 0em 3em 1em #777777ff;
+
+  overflow: hidden;
 }
 
-#two > .card > .card-text {
-  height: 240px;
-  width: auto;
+#two .card-container .danger {
+  border-width: 0.4em 0 0 0;
+  border-style: solid;
+  border-color: #dc3545 !important;
+  border-radius: 1em;
+}
+
+#two .card-container .success {
+  border-width: 0.4em 0 0 0;
+  border-style: solid;
+  border-color: #28a745 !important;
+  border-radius: 1em;
+}
+
+#two .card-container .card .card-text {
+  margin: 0.5em 2em;
+}
+
+#two .card-container .card .card-text h4 {
+  font-size: calc(1.2em + 1vw);
+  font-weight: 800;
+}
+
+#two .card-container .card .card-text p {
+  font-size: calc(0.2em + 1vw);
+  font-weight: 100;
+}
+
+#two .card-container .card img {
+  height: 80%;
+
+  float: right;
 }

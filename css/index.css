@@ -1,3 +1,24 @@
+:root {
+  --section-width: 100vw;
+  --section-height: 50vh;
+
+  --section-flex-direction: column;
+  --section-justify-content: space-evenly;
+  --section-align-items: center;
+  --section-align-content: center;
+
+  --container-flex-direction: row;
+  --container-justify-content: space-around;
+  --container-align-items: center;
+  --container-align-content: center;
+}
+
+@media only screen and (max-width: 980px) {
+  :root {
+    --container-flex-direction: column;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,42 +27,76 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 62.5%;
 }
 
-div {
+#one {
+  width: var(--section-width);
+  height: var(--section-height);
+
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
+  flex-direction: var(--section-flex-direction);
+  justify-content: var(--section-justify-content);
+  align-items: var(--section-align-items);
+  align-content: var(--section-align-content);
 
-  width: 100vw;
-  height: 50vh;
+  color: #ffffff;
+  background-color: #06283d;
 }
 
-h1 {
-  font-size: 2.4em;
-  line-height: 2em;
-}
+#two {
+  width: var(--section-width);
+  height: var(--section-height);
 
-p {
-  font-size: 1.4em;
-  line-height: 1.2em;
+  display: flex;
+  flex-direction: var(--section-flex-direction);
+  justify-content: var(--section-justify-content);
+  align-items: var(--section-align-items);
+  align-content: var(--section-align-content);
+
+  color: #ffffff;
+  background-color: #256d85;
 }
 
 #three {
+  width: var(--section-width);
+  height: var(--section-height);
+
+  display: flex;
+  flex-direction: var(--section-flex-direction);
+  justify-content: var(--section-justify-content);
+  align-items: var(--section-align-items);
+  align-content: var(--section-align-content);
+
   color: #ffffff;
   background-color: #47b5ff;
 }
 
 #four {
+  width: var(--section-width);
+  height: var(--section-height);
+
+  display: flex;
+  flex-direction: var(--section-flex-direction);
+  justify-content: var(--section-justify-content);
+  align-items: var(--section-align-items);
+  align-content: var(--section-align-content);
+
   color: #000000;
   background-color: #dff6ff;
 }
 
 #five {
+  width: var(--section-width);
+  height: var(--section-height);
+
+  display: flex;
+  flex-direction: var(--section-flex-direction);
+  justify-content: var(--section-justify-content);
+  align-items: var(--section-align-items);
+  align-content: var(--section-align-content);
+
   color: #000000;
   background-color: #ffffff;
 }
