@@ -1,4 +1,5 @@
 :root {
+  /* Sections */
   --section-width: 100vw;
   --section-height: 50vh;
 
@@ -7,10 +8,21 @@
   --section-align-items: center;
   --section-align-content: center;
 
+  /* Card Containers */
   --container-flex-direction: row;
   --container-justify-content: space-around;
   --container-align-items: center;
   --container-align-content: center;
+
+  /* Colors */
+  --color-primary: #007bff !important;
+  --color-secondary: #6c757d !important;
+  --color-success: #28a745 !important;
+  --color-danger: #dc3545 !important;
+  --color-warning: #ffc107 !important;
+  --color-info: #17a2b8 !important;
+
+  --color-bg-dark: #343a40 !important;
 }
 
 @media only screen and (max-width: 980px) {

@@ -28,14 +28,14 @@
 #two .card-container .danger {
   border-width: 0.4em 0 0 0;
   border-style: solid;
-  border-color: #dc3545 !important;
+  border-color: var(--color-danger);
   border-radius: 1em;
 }
 
 #two .card-container .success {
   border-width: 0.4em 0 0 0;
   border-style: solid;
-  border-color: #28a745 !important;
+  border-color: var(--color-success);
   border-radius: 1em;
 }
 
