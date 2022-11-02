@@ -25,6 +25,12 @@
   overflow: hidden;
 }
 
+@media only screen and (max-width: 1200px) {
+  #two .card-container .card {
+    width: 35vw;
+  }
+}
+
 #two .card-container .danger {
   border-width: 0.4em 0 0 0;
   border-style: solid;
