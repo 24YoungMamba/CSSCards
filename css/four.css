@@ -64,12 +64,12 @@
   overflow: hidden;
 
   animation: imgAnimOut 1s forwards;
-  /* transition: all 0.2s linear; */
 }
 
 #four .card-container .card .card-img img {
   height: 100%;
-  /* display: absolute; */
+
+  /* filter: drop-shadow(10px 10px 5px #dfdfdf); */
 }
 
 #four .card-container .card:hover .card-img {
